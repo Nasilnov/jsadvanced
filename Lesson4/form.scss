@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1200px;
+  padding: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 400px;
+}
+input[type=text], textarea {
+  display: flex;
+  width: 400px;
+  margin: 10px 0 20px 0;
+}
+
+.err {
+  box-shadow: 0 0 6px 2px red ;
+}
+
+.messout {
+  font-size: 20px;
+  padding: 20px 0;
+}
+.errItem {
+  font-size: 14px;
+  color: red;
+  margin: 0 0 0 20px;
+}
+label {
+  width: 400px;
+  overflow: hidden;
+}
+.button {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+#submit {
+  display: flex;
+  padding: 20px;
+  background: grey;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}

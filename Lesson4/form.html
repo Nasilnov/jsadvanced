@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form.css">
+
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="messout">Напишите ваше сообщение:</div>
+        <form action="#" class="form" id="form" method="get">
+            <label for="name" class="name">Ваше имя:<span class="errItem"></span></label>
+            <input type="text"  name="name" id="name" class="valid">
+            <label for="tel" class="tel">Ваш телефон:<span class="errItem"></span></label>
+            <input type="text" name="tel" id="tel" class="valid">
+            <label for="email" class="email">Ваш email: <span class="errItem"></span></label>
+            <input type="text" name="email" id="email" class="valid">
+            <label for="mess" class="mess">Ваше сообщение: <span class="errItem"></span></label>
+            <textarea name="mess" class="valid" id="mess" cols="30" rows="10"></textarea>
+            <div class="button"><input type="submit" name="submit" id="submit"></div>
+        </form>
+    </div>
+</div>
+
+<script>
+    let form = document.querySelector('#form');
+    let submit = form.querySelector('#submit');
+    form.addEventListener('submit', validate, true);
+
+    function validate(e) {
+        let errItem = document.querySelectorAll('.errItem');
+        for (let item of errItem) {
+            item.innerHTML = "";
+        }
+        validList = document.querySelectorAll('.valid');
+        let validTrue = 0;
+        for (let validItem of validList) {
+            let validSub = new InputValid(validItem.id);
+            validTrue += validSub.validateItem();
+        }
+        if (validTrue === 0) {
+            return true;
+        } else e.preventDefault();
+    }
+
+
+    class InputValid {
+        constructor(classname) {
+            this.classname = classname;
+        }
+
+        validList = [
+            {classname: 'name',  expr: '^([а-яё\\s]+|[a-z\\s]+)$', flag: 'iu', text: 'В имени должны быть только буквы'},
+            {classname: 'tel',   expr: '^(\\+\\d+\\(\\d{3}\\)\\d{3}-\\d{4}$)', flag: 'i',text: 'Телефон в формате +7(000)000-0000'},
+            {classname: 'email', expr: '^(\\w*[-\\.]?\\w*@\\w*\\.(com)?(ru)?$)', flag: 'i',text: 'Адрес почты в формате: mymail@mail.ru(com), или my.mail@mail.ru(com), или my-mail@mail.ru(com)'},
+            {classname: 'mess',  expr: '^([а-яё\\s]+|[a-z\\s]+|\\d+)', flag: 'iu',text: 'Сообщение не должно быть пустым'},
+        ];
+
+        validateItem() {
+            let validDate = this.getValidItem();
+            let block = form.querySelector(`#${validDate.classname}`);
+            let blockValue = block.value;
+            let regExp = new RegExp(validDate.expr, validDate.flag);
+            if (blockValue.search(regExp) === -1) {
+                document.querySelector(`.${validDate.classname}`).querySelector('.errItem').insertAdjacentHTML("beforeend", `${validDate.text}`);
+                block.classList.add('err');
+                return 1;
+            } else {
+                block.classList.remove('err');
+                return 0;
+            }
+        }
+
+        getValidItem() {
+            return this.validList.find(item => item.classname === this.classname);
+        }
+    }
+
+
+</script>
+
+<script>
+    let str = `Вася:  'Уйди противный'.
+Петя: 'Сам уйди', aren't, блин.
+Оля: 'Оба вы козлы'.`;
+    console.log(str.replace(/'\B/g,'"' ));
+</script>
+</body>
+</html>
