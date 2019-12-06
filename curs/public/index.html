@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://use.fontawesome.com/7d5f1b83c9.js"></script>
+</head>
+<body>
+<div id="app">
+<header class="header">
+    <div class="container header__flex">
+        <div class="header__left">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Лого">BRAN<span>D</span></a>
+            <form action="#">
+                <div class="header__browse">
+                    <div class="browse_level" onclick="document.getElementById('drop__header').style.display='flex';µ=true">Browse<img src="img/pointdown.png" alt=""></div>
+                    <div id="drop__header" class="drop__header" style="display: none">
+                        <div class="drop_block">
+                            <h2>Women</h2>
+                            <ul class="mega_ul">
+                                <li class="mega_li"><a href="index.html">Dresses</a></li>
+                                <li class="mega_li"><a href="#">Tops</a></li>
+                                <li class="mega_li"><a href="#">Sweaters/Knits</a></li>
+                                <li class="mega_li"><a href="#">Jackets/Coats</a></li>
+                                <li class="mega_li"><a href="#">Blazers</a></li>
+                                <li class="mega_li"><a href="#">Denim</a></li>
+                                <li class="mega_li"><a href="#">Leggings/Pants</a></li>
+                                <li class="mega_li"><a href="#">Skirts/Shorts</a></li>
+                                <li class="mega_li"><a href="#">Accessories</a></li>
+                            </ul>
+                        </div>
+                        <div class="drop_block">
+                            <h2>Women</h2>
+                            <ul class="mega_ul">
+                                <li class="mega_li"><a href="#">Dresses</a></li>
+                                <li class="mega_li"><a href="#">Tops</a></li>
+                                <li class="mega_li"><a href="#">Sweaters/Knits</a></li>
+                                <li class="mega_li"><a href="#">Jackets/Coats</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="header__input" placeholder="Search for Item...">
+                <button class="header__button"><img src="img/lup.png" alt=""></button>
+            </form>
+        </div>
+        <div class="header__right">
+            <div class="cart">
+                <!--<filter-el></filter-el>-->
+                <cart ref="cart"></cart>
+            </div>
+            <div class="header__account">My Account<img src="img/pointdownwithe.png" alt=""></div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <ul class="menu">
+
+        <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
+        <li class="menu__list"><a href="catalog.html" class="menu__link parent_level">Man</a>
+            <div class="drop">
+                    <div class="drop_block">
+                        <h2>Women</h2>
+                        <ul class="mega_ul">
+                            <li class="mega_li"><a href="#">Dresses</a></li>
+                            <li class="mega_li"><a href="#">Tops</a></li>
+                            <li class="mega_li"><a href="#">Sweaters/Knits</a></li>
+                            <li class="mega_li"><a href="#">Jackets/Coats</a></li>
+                            <li class="mega_li"><a href="#">Blazers</a></li>
+                            <li class="mega_li"><a href="#">Denim</a></li>
+                            <li class="mega_li"><a href="#">Leggings/Pants</a></li>
+                            <li class="mega_li"><a href="#">Skirts/Shorts</a></li>
+                            <li class="mega_li"><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop_block">
+                        <h2>Women</h2>
+                        <ul class="mega_ul">
+                            <li class="mega_li"><a href="#">Dresses</a></li>
+                            <li class="mega_li"><a href="#">Tops</a></li>
+                            <li class="mega_li"><a href="#">Sweaters/Knits</a></li>
+                            <li class="mega_li"><a href="#">Jackets/Coats</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop_block">
+                        <h2>Women</h2>
+                        <ul class="mega_ul">
+                            <li class="mega_li"><a href="#">Dresses</a></li>
+                            <li class="mega_li"><a href="#">Tops</a></li>
+                            <li class="mega_li"><a href="#">Sweaters/Knits</a></li>
+                            <li class="mega_li last_li"><a href="#"><img src="img/Layer_42.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </li>
+        <li class="menu__list"><a href="cart.html" class="menu__link">Women</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">Kids</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">Accoseriese</a></li>
+        <li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
+        <li class="menu__list"><a href="#" class="menu__link parent_level">Hot Deals</a>
+            <div class="drop drop_last">
+                <div class="drop_block">
+                    <h2>Women</h2>
+                    <ul class="mega_ul">
+                        <li class="mega_li"><a href="#">Dresses</a></li>
+                        <li class="mega_li"><a href="#">Tops</a></li>
+                        <li class="mega_li"><a href="#">Sweaters/Knits</a></li>
+                        <li class="mega_li"><a href="#">Jackets/Coats</a></li>
+                    </ul>
+                </div>
+                <div class="drop_block">
+                    <h2>Women</h2>
+                    <ul class="mega_ul">
+                        <li class="mega_li"><a href="#">Dresses</a></li>
+                        <li class="mega_li"><a href="#">Tops</a></li>
+                        <li class="mega_li"><a href="#">Sweaters/Knits</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+<div class="promo">
+    <div class="container promo__flex">
+        <div class="promo__content">
+            <p class="promo__text promo__text_big">THE BRAND</p>
+            <p class="promo__text">OF LUXERIOUS <span class="pink">FASHION</span></p>
+        </div>
+    </div>
+</div>
+
+<div class="bigimg">
+    <div class="container bigimg__flex">
+        <div class="bigimg__left">
+            <div class="bigimg__block">
+                <img src="img/Layer_30.jpg" alt="">
+                <div class="bigimg__adver">
+                    <p class="bigimg__text_small">HOT DEAL</p>
+                    <p class="bigimg__text_big">FOR MEN </p>
+                </div>
+            </div>
+            <div class="bigimg__block">
+                <img src="img/Layer_37.jpg" alt="">
+                <div class="bigimg__adver">
+                    <p class="bigimg__text_small">HOT DEAL</p>
+                    <p class="bigimg__text_big">FOR MEN </p>
+                </div>
+            </div>
+        </div>
+        <div class="bigimg__right">
+            <div class="bigimg__block">
+                <img src="img/Layer_32.jpg" alt="">
+                <div class="bigimg__adver">
+                    <p class="bigimg__text_small">HOT DEAL</p>
+                    <p class="bigimg__text_big">FOR MEN </p>
+                </div>
+            </div>
+            <div class="bigimg__block">
+                <img src="img/Layer_31.jpg" alt="">
+                <div class="bigimg__adver">
+                    <p class="bigimg__text_small">HOT DEAL</p>
+                    <p class="bigimg__text_big">FOR MEN </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <p class="smallimg__text_big">Fetured Items</p>
+    <p class="smallimg__text_small">Shop for items based on what we featured in this week</p>
+    <div class="smallimg__box">
+        <div class="smallimg__item">
+                <div class="smallimg__addcatr">
+                    <img src="img/cart.svg" alt=""><a href="#">Add to Cart</a>
+                </div>
+            <a href="#"><img class="smallimg__img" src="img/Layer_2.jpg" alt=""></a>
+            <p class="smallimg__text">Mango  People  T-shirt</p>
+            <p class="smallimg__price">$52.00</p>
+        </div>
+        <div class="smallimg__item">
+                <div class="smallimg__addcatr">
+                    <img src="img/cart.svg" alt=""><a href="#">Add to Cart</a>
+                </div>
+            <a href="#"><img class="smallimg__img" src="img/Layer_3.jpg" alt=""></a>
+            <p class="smallimg__text">Mango  People  T-shirt</p>
+            <p class="smallimg__price">$52.00</p>
+        </div>
+        <div class="smallimg__item">
+                <div class="smallimg__addcatr">
+                    <img src="img/cart.svg" alt=""><a href="#">Add to Cart</a>
+                </div>
+            <a href="#"><img class="smallimg__img" src="img/Layer_2.jpg" alt=""></a>
+            <p class="smallimg__text">Mango  People  T-shirt</p>
+            <p class="smallimg__price">$52.00</p>
+        </div>
+        <div class="smallimg__item">
+                <div class="smallimg__addcatr">
+                    <img src="img/cart.svg" alt=""><a href="#">Add to Cart</a>
+                </div>
+            <a href="#"><img class="smallimg__img" src="img/Layer_5.jpg" alt=""></a>
+            <p class="smallimg__text">Mango  People  T-shirt</p>
+            <p class="smallimg__price">$52.00</p>
+        </div>
+        <div class="smallimg__item">
+                <div class="smallimg__addcatr">
+                    <img src="img/cart.svg" alt=""><a href="#">Add to Cart</a>
+                </div>
+            <a href="#"><img class="smallimg__img" src="img/Layer_2.jpg" alt=""></a>
+            <p class="smallimg__text">Mango  People  T-shirt</p>
+            <p class="smallimg__price">$52.00</p>
+        </div>
+        <div class="smallimg__item">
+                <div class="smallimg__addcatr">
+                    <img src="img/cart.svg" alt=""><a href="#">Add to Cart</a>
+                </div>
+            <a href="#"><img class="smallimg__img" src="img/Layer_2.jpg" alt=""></a>
+            <p class="smallimg__text">Mango  People  T-shirt</p>
+            <p class="smallimg__price">$52.00</p>
+        </div>
+        <div class="smallimg__item">
+                <div class="smallimg__addcatr">
+                    <img src="img/cart.svg" alt=""><a href="#">Add to Cart</a>
+                </div>
+            <a href="#"><img class="smallimg__img" src="img/Layer_2.jpg" alt=""></a>
+            <p class="smallimg__text">Mango  People  T-shirt</p>
+            <p class="smallimg__price">$52.00</p>
+        </div>
+        <div class="smallimg__item">
+                <div class="smallimg__addcatr">
+                    <img src="img/cart.svg" alt=""><a href="#">Add to Cart</a>
+                </div>
+            <a href="#"><img class="smallimg__img" src="img/Layer_2.jpg" alt=""></a>
+            <p class="smallimg__text">Mango  People  T-shirt</p>
+            <p class="smallimg__price">$52.00</p>
+        </div>
+    </div>
+    <div class="smallimg__allproduct">
+        <a href="catalog.html">Browse All Product</a><img src="img/arrow.png" alt="">
+    </div>
+</div>
+
+<div class="container">
+    <div class="offer">
+
+        <div class="offer__left">
+            <div class="offer__left_back"><img src="img/Layer_38.jpg" alt=""></div>
+            <div class="offer__left_front"><img src="img/Layer_39.png" alt=""></div>
+            <div class="offer__left_text">
+                <div class="offer__left_text_big">30% <span>OFFER</span></div>
+                <div class="offer__left_text_small">FOR WOMEN</div>
+            </div>
+        </div>
+
+        <div class="offer__right">
+
+            <div class="offer__delivery">
+                <div class="offer__img"><img src="img/car.svg" alt=""></div>
+                <div class="offer__text">
+                    <h2>Free Delivery</h2>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+
+            <div class="offer__delivery">
+                <div class="offer__img"><img src="img/discount.svg" alt=""></div>
+                <div class="offer__text">
+                    <h2>Sales & discounts</h2>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+
+            <div class="offer__delivery">
+                <div class="offer__img"><img src="img/qual.svg" alt=""></div>
+                <div class="offer__text">
+                    <h2>Sales & discounts</h2>
+                    <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="container_large container_after">
+    <div class="container container_relative">
+        <div class="subscrible__flex">
+
+            <div class="subscrible__left">
+                <div class="subscrible__left_img"><img src="img/Layer_40.jpg" alt=""></div>
+                <div class="subscrible__left_text">
+                    <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                        a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
+                    <div class="subscrible__left_text1">Bin Burhan</div>
+                    <div class="subscrible__left_text2">Dhaka, Bd</div>
+                    <div class="subscrible__line">
+                        <img src="img/RectangleW.svg" alt="">
+                        <img src="img/RectangleG.svg" alt="">
+                        <img src="img/RectangleW.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscrible__right">
+                <div class="subscrible__right_text1">Subscribe</div>
+                <div class="subscrible__right_text2">FOR OUR NEWLETTER AND PROMOTION</div>
+                <form class="subscrible__form" action="#">
+                    <input type="email" class="subscrible__input" placeholder="Enter Your Email" required>
+                    <button class="subscrible__button">Subscribe</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <footer class="footer">
+        <div class="footer__block1">
+            <a href="" class="logo"><img src="img/logo.png" alt="Лого">BRAN<span>D</span></a>
+            <div class="footer__block1_text">
+                <p>Objectively transition extensive data rather than cross functional solutions.
+                    Monotonectally syndicate multidisciplinary materials before go forward benefits.
+                    Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p><br>
+                <p>
+                    Efficiently plagiarize 24/365 action items and focused infomediaries.
+                    Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+                </p>
+            </div>
+        </div>
+        <div class="footer__block2">
+            <div class="footer__block_menu">
+                <h2>COMPANY</h2>
+                <ul class="footer__menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__block_menu">
+                <h2>INFORMATION</h2>
+                <ul class="footer__menu">
+                    <li><a href="#">Tearms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">How to Sell</a></li>
+                    <li><a href="#">Promotion</a></li>
+                </ul>
+            </div>
+            <div class="footer__block_menu">
+                <h2>SHOP CATEGORY</h2>
+                <ul class="footer__menu">
+                    <li><a href="#">Tearms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">How to Sell</a></li>
+                    <li><a href="#">Promotion</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<div class="footer_post_box">
+    <div class="container_large">
+        <div class="container">
+            <div class="footer_post">
+                <div class="right"> © 2017  Brand  All Rights Reserved.</div>
+                <div class="social">
+                    <a href="#"><span class="social__box" style="background-color: white"><i class="fa fa-facebook" style="color: #b2b2b2;" aria-hidden="true"></i></span></a>
+                    <a href="#"><span class="social__box" style="background-color: #f16d7f"><img src="img/br.png" alt=""></span></a>
+                    <a href="#"><span class="social__box" style="background-color: #ffffff"><img src="img/in.png" alt=""></span></a>
+                    <a href="#"><span class="social__box" style="background-color: whitesmoke"><img src="img/p.png" alt=""></span></a>
+                    <a href="#"><span class="social__box" style="background-color: white"><img src="img/g+.png" alt=""></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    window.onload=function(){
+        document.body.onclick=function(){
+            if(µ) {µ =false; return;}
+            document.getElementById("drop__header").style.display="none"
+            document.getElementById("drop__cart").style.display="none"
+        }
+    }
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/CartComp.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
