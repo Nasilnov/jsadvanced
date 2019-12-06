@@ -1,0 +1,58 @@
+[
+  {
+    "id_product": 124,
+    "product_name": "DJANGO PEOPLE T-SHIRT",
+    "color": "red",
+    "size": "XL",
+    "price": 48.00,
+    "img": "img/Layer_48.png"
+  },
+  {
+    "id_product": 128,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "color": "red",
+    "size": "X",
+    "price": 39.00,
+    "img": "img/Layer_45.png"
+  },
+  {
+    "id_product": 145,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "color": "blue",
+    "size": "XL",
+    "price": 35.00,
+    "img": "img/Layer_44.png"
+  },
+  {
+    "id_product": 250,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "color": "red",
+    "size": "XL",
+    "price": 41.00,
+    "img": "img/Layer_46.png"
+  },
+  {
+    "id_product": 425,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "color": "red",
+    "size": "XL",
+    "price": 53.00,
+    "img": "img/Layer_47.png"
+  },
+  {
+    "id_product": 333,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "color": "red",
+    "size": "XL",
+    "price": 85.00,
+    "img": "img/Layer_48.png"
+  },
+  {
+    "id_product": 457,
+    "product_name": "MANGO PEOPLE T-SHIRT",
+    "color": "red",
+    "size": "XL",
+    "price": 64.00,
+    "img": "img/Layer_46.png"
+  }
+]
